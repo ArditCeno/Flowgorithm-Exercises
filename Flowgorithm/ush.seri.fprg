@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="TJETER USHTRIM SERI I SAAKT"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-29 09:27:28 PM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNS0wMS0yOTswODo1MTozNCBQTTsyODAx"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNS0wMS0yOTswOToyNzoyOCBQTTsxOzI5MTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="S=1+x+x^2/2+x^3/3..."/>
+            <declare name="n, nrt, s, a, x" type="Integer" array="False" size=""/>
+            <assign variable="n" expression="1"/>
+            <assign variable="s" expression="0"/>
+            <output expression="&quot;Vendosni numrin e termave&quot;" newline="True"/>
+            <input variable="nrt"/>
+            <output expression="&quot;Vendos vleren e x&quot;" newline="True"/>
+            <input variable="x"/>
+            <for variable="a" start="1" end="nrt-1" direction="inc" step="1">
+                <if expression="n!=0">
+                    <then>
+                        <assign variable="x" expression="(x^n)/n"/>
+                        <assign variable="s" expression="s+(x^n)/n"/>
+                        <assign variable="n" expression="n+1"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;error&quot;" newline="True"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;S eshte: &quot; &amp;s" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

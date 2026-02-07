@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="dhjetor ne bin"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-12-15 04:45:34 PM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNC0xMi0xNTswNDo0MDozMCBQTTsyNzg3"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNC0xMi0xNTswNDo0NTozNCBQTTsxOzI5MDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="mere nr nga perdoruesi dhe afishon binarin e tij&#13;&#10;"/>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <output expression="&quot;Vendsoni nje nr ne dhjetor&quot;" newline="True"/>
+            <input variable="N"/>
+            <declare name="Bin" type="String" array="False" size=""/>
+            <assign variable="bin" expression="&quot;&quot;"/>
+            <while expression="N&gt;0">
+                <assign variable="bin" expression="(N%2)&amp;bin"/>
+                <assign variable="N" expression="N/2"/>
+            </while>
+            <output expression="&quot;Trajta bin eshte: &quot;&amp;bin" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

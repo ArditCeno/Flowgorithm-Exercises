@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="mosha"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-11-29 05:00:37 PM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNC0xMS0yOTswNDo1NzoyNSBQTTsyODAz"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNC0xMS0yOTswNTowMDozNyBQTTsxOzI5MDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="m, v" type="Integer" array="False" size=""/>
+            <output expression="&quot;vendosni moshen&quot;" newline="True"/>
+            <input variable="m"/>
+            <if expression="m&gt;=18">
+                <then>
+                    <output expression="&quot;ka te drejte te votoje&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;ska te drejte te votoje&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

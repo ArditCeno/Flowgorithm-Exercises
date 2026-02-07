@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="vlera e nr"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-29 06:29:51 PM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNS0wMS0yOTswNjowOTo0NyBQTTsyODA2"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNS0wMS0yOTswNjoyOTo1MSBQTTsxOzI5MTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nr, kat, max, fuqi, i, maxnr" type="Integer" array="False" size=""/>
+            <output expression="&quot;Vendosnin vleren e n&quot;" newline="True"/>
+            <input variable="nr"/>
+            <output expression="&quot;Vendos vleren max te vlerave: &quot;" newline="True"/>
+            <input variable="max"/>
+            <for variable="nr" start="1" end="max" direction="inc" step="1">
+                <assign variable="fuqi" expression="nr/10"/>
+                <for variable="i" start="1" end="max" direction="inc" step="1">
+                    <assign variable="fuqi" expression="fuqi + 1"/>
+                </for>
+            </for>
+            <output expression="&quot;Fuqia eshte: &quot; &amp;fuqi" newline="True"/>
+            <assign variable="nr" expression="nr^fuqi"/>
+            <output expression="&quot;Vlera eshte: &quot; &amp;nr" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

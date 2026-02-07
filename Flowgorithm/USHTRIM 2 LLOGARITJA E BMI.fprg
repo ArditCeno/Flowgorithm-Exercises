@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="USHTRIM 2 LLOGARITJA E BMI"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-02-08 12:07:29 AM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNS0wMS0zMDsxMTowNTozOSBBTTsyNzc2"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNi0wMi0wODsxMjowNzoyOSBBTTs1OzI4OTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Llogaritja e BMI"/>
+            <declare name="BMI, pesha, lartesia, gj, gjat" type="Real" array="False" size=""/>
+            <output expression="&quot;Vendosni peshen: &quot;" newline="True"/>
+            <input variable="pesha"/>
+            <output expression="&quot;Vendosni lartesine ne centimetra: &quot;" newline="True"/>
+            <input variable="lartesia"/>
+            <assign variable="gj" expression="lartesia/100"/>
+            <assign variable="gjat" expression="gj*gj"/>
+            <assign variable="BMI" expression="pesha/gjat"/>
+            <if expression="18.5&lt;=BMI&lt;25">
+                <then>
+                    <output expression="&quot;Pesha eshte normale!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="BMI&lt;18.5">
+                        <then>
+                            <output expression="&quot;Nen peshe!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Obezitet&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

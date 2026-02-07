@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Andi1"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-30 10:20:19 AM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNS0wMS0zMDswOTo1Nzo1MCBBTTsyNzgz"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNS0wMS0zMDsxMDoyMDoxOSBBTTsxOzI4Nzg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Ki=K1+(i-1)*d"/>
+            <declare name="Ki, K1, d, term" type="Real" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Jepni vleren e kursimit te muajit te pare: &quot;" newline="True"/>
+            <input variable="K1"/>
+            <output expression="&quot;Jepni shtesen mujore te kursimit: &quot;" newline="True"/>
+            <input variable="d"/>
+            <assign variable="Ki" expression="K1"/>
+            <assign variable="term" expression="K1"/>
+            <for variable="i" start="1" end="12" direction="inc" step="1">
+                <assign variable="term" expression="term + (i-1)*d"/>
+                <output expression="&quot;Kursimi i secilit muaji eshte: &quot; &amp;term" newline="True"/>
+                <assign variable="Ki" expression="Ki + term"/>
+            </for>
+            <output expression="&quot;Kursimi total i 12 muajve eshte: &quot; &amp;Ki" newline="True"/>
+            <output expression="&quot;Muaji me kursimin me te larte eshte muaji i 12 me vleren: &quot; &amp;term" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

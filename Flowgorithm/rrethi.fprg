@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="rrethi"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-12-15 09:03:16 PM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNC0xMi0xNTswODo0OTo0NSBQTTsyODA2"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNC0xMi0xNTswOTowMzoxNiBQTTsxOzI5MDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="r, per, sip" type="Integer" array="False" size=""/>
+            <output expression="&quot;Vendos vleren e rrezes&quot;" newline="True"/>
+            <input variable="r"/>
+            <assign variable="per" expression="2*3.14*r"/>
+            <output expression="&quot;Perimetri eshte: &quot;&amp;per" newline="True"/>
+            <assign variable="sip" expression="3.14*r*r"/>
+            <output expression="&quot;Sip eshte: &quot;&amp;sip" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

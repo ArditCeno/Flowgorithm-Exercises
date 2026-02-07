@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ushtrim qe dua une te  bej se jam bob"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-29 06:09:28 PM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNS0wMS0yOTswNTowNTozMCBQTTsyNzkz"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNS0wMS0yOTswNjowOToyOCBQTTsxOzI5MTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="nje algoritem qe lex 2 nr deh nje char +,-,*,/ dhe afishon veprimin e kryer "/>
+            <declare name="n1, n2, v" type="Integer" array="False" size=""/>
+            <declare name="plus, minus, here, pjestimi, cha, veprimi" type="Integer" array="False" size=""/>
+            <output expression="&quot;fut veprimin&quot;" newline="True"/>
+            <input variable="veprimi"/>
+            <assign variable="veprimi" expression="plus"/>
+            <assign variable="veprimi" expression="minus"/>
+            <assign variable="veprimi" expression="here"/>
+            <assign variable="veprimi" expression="pjestimi"/>
+            <output expression="&quot;Fusni nr 1: &quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Fusni nr2: &quot;" newline="True"/>
+            <input variable="n2"/>
+            <if expression="cha==plus">
+                <then>
+                    <assign variable="v" expression="n1+n2"/>
+                    <output expression="&quot;Shuma eshte: &quot; &amp;v" newline="True"/>
+                </then>
+                <else>
+                    <if expression="cha==minus">
+                        <then>
+                            <assign variable="v" expression="n1-n2"/>
+                            <output expression="&quot;dif eshte: &quot; &amp;v" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="cha==here">
+                                <then>
+                                    <assign variable="v" expression="n1*n2"/>
+                                    <output expression="&quot;prodh eshte: &quot; &amp;v" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="cha==pjestimi">
+                                        <then>
+                                            <if expression="n2!=0">
+                                                <then>
+                                                    <assign variable="v" expression="n1/n2"/>
+                                                    <output expression="&quot;Pjestimi eshte: &quot; &amp;v" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;ERROR&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

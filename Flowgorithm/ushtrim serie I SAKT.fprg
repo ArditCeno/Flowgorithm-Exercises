@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ushtrim serie I SAKT"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-29 08:50:17 PM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNS0wMS0yOTswODoyOToxMyBQTTsyODAz"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNS0wMS0yOTswODo1MDoxNyBQTTsxOzI5MDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="S=a+ar+ar^2+...."/>
+            <declare name="a, i, nrt, r, s" type="Integer" array="False" size=""/>
+            <output expression="&quot;Jepni vleren e kufizave: &quot;" newline="True"/>
+            <input variable="a"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="s" expression="0"/>
+            <output expression="&quot;Vendos vleren e fuqis: &quot;" newline="True"/>
+            <input variable="r"/>
+            <output expression="&quot;vendos numri e termave: &quot;" newline="True"/>
+            <input variable="nrt"/>
+            <for variable="i" start="0" end="nrt-1" direction="inc" step="1">
+                <assign variable="s" expression="s+(a*r^i)"/>
+            </for>
+            <output expression="&quot;s eshte: &quot; &amp;s" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

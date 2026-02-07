@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2nr dhe afishon veprimet"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-11-30 10:42:09 PM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNC0xMS0zMDsxMDoyMzoyNCBQTTsyNzg0"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNC0xMS0zMDsxMDo0MjowOSBQTTsxOzI4OTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, sh, dif1, dif2, pr, h" type="Integer" array="False" size=""/>
+            <output expression="&quot;Vendosni vlerat v1 dhe v2&quot;" newline="True"/>
+            <input variable="n1"/>
+            <input variable="n2"/>
+            <assign variable="sh" expression="n1+n2"/>
+            <assign variable="dif1" expression="n1-n2"/>
+            <assign variable="dif2" expression="n2-n1"/>
+            <assign variable="pr" expression="n1*n2"/>
+            <if expression="n2=0">
+                <then>
+                    <output expression="&quot;ERROR&quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="h" expression="n1/n2"/>
+                </else>
+            </if>
+            <output expression="&quot;vlerat jane:shuma&quot;&amp;sh" newline="True"/>
+            <output expression="&quot;Dif1:&quot;&amp;dif1" newline="True"/>
+            <output expression="&quot;Dif2:&quot;&amp;dif2" newline="True"/>
+            <output expression="&quot;Prodh:&quot;&amp;pr" newline="True"/>
+            <output expression="&quot;vlera e pjestimit:&quot; &amp;h" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

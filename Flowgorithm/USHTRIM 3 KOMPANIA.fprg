@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="USHTRIM 3 KOMPANIA"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-30 11:47:53 AM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNS0wMS0zMDsxMToyOTowNiBBTTsyNzc2"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNS0wMS0zMDsxMTozMDoxNCBBTTsxO1VzZXI7REVTS1RPUC00R1BOT0lUOzIwMjUtMDEtMzA7MTE6MDU6MzkgQU07NTcxMA=="/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNS0wMS0zMDsxMTo0Nzo1MyBBTTsxOzI4ODY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="d, n, r, muaj, shm, sht" type="Real" array="False" size=""/>
+            <output expression="&quot;Vendos vleren e qiras ne muajin 1: &quot;" newline="True"/>
+            <input variable="r"/>
+            <output expression="&quot;Vendos nr e muajve: &quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot;Vendos vleren e rritjes mujore d: &quot;" newline="True"/>
+            <input variable="d"/>
+            <assign variable="shm" expression="0"/>
+            <assign variable="sht" expression="0"/>
+            <for variable="muaj" start="1" end="n" direction="inc" step="1">
+                <assign variable="r" expression="r+d"/>
+                <assign variable="shm" expression="r"/>
+                <output expression="&quot;shuma e muajit eshte: &quot; &amp;shm" newline="True"/>
+                <assign variable="sht" expression="shm+shm"/>
+            </for>
+            <output expression="&quot;Shuma totale: &quot; &amp;shm" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

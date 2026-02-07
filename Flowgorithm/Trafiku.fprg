@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Andi2"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-30 10:45:43 AM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNS0wMS0zMDsxMDoyMDoyMiBBTTsyNzY0"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNS0wMS0zMDsxMDo0NTo0MyBBTTsxOzI4ODI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nrA, n" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="max, min, minMax, m, S" type="Real" array="False" size=""/>
+            <assign variable="max" expression="50"/>
+            <assign variable="min" expression="10"/>
+            <assign variable="minMax" expression="0"/>
+            <assign variable="S" expression="0"/>
+            <assign variable="m" expression="0"/>
+            <output expression="&quot;Vendosni numrin e minutave: &quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <output expression="&quot;Vendosni numrin e makinave qe kaluan ne kete minute: &quot;" newline="True"/>
+                <input variable="nrA"/>
+                <if expression="nrA &gt; max">
+                    <then>
+                        <output expression="&quot;Trafik i larte &quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="nrA &lt; min">
+                            <then>
+                                <output expression="&quot;Trafik i ulet &quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Trafik normal&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <if expression="nrA &gt; minMax">
+                    <then>
+                        <assign variable="minMax" expression="nrA"/>
+                        <output expression="&quot;Minuta me me shume trafik deri tani eshte: &quot; &amp;i" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="S" expression="S + nrA"/>
+            </for>
+            <assign variable="m" expression="S/n"/>
+            <output expression="&quot;Mesatarja e numrit te makinave eshte: &quot; &amp;m" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

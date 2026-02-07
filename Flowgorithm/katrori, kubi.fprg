@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="katrori, kubi"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-11-30 10:23:05 PM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNC0xMS0zMDsxMDoxODozMSBQTTsyNzg2"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNC0xMS0zMDsxMDoyMzowNSBQTTsxOzI4OTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nr, katrori, kubi" type="Integer" array="False" size=""/>
+            <output expression="&quot;Vendosni vleren e nr&quot;" newline="True"/>
+            <input variable="nr"/>
+            <assign variable="katrori" expression="nr*nr"/>
+            <output expression="&quot;katrori eshte;&quot;&amp;katrori" newline="True"/>
+            <assign variable="kubi" expression="nr*nr*nr"/>
+            <output expression="&quot;kubi eshte;&quot;&amp;kubi" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

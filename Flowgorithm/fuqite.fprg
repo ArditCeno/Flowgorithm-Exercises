@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="nr tek ose cift"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-29 04:47:26 PM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNS0wMS0yOTswNDozMjoyOSBQTTsyODAw"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNS0wMS0yOTswNDo0NzoyNiBQTTsyOzI5MTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="marim 2 nr nga perdoruesi njeri baza tjetri eksponenti&#13;&#10;"/>
+            <declare name="a, b, vlera" type="Real" array="False" size=""/>
+            <output expression="&quot;Vendosni vleren e 2 numrave&quot;" newline="True"/>
+            <output expression="&quot;vlera e pare eshte: &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Vlera e dyte eshte: &quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="a&gt;0">
+                <then>
+                    <assign variable="vlera" expression="b^a"/>
+                </then>
+                <else>
+                    <assign variable="vlera" expression="1/b^a"/>
+                </else>
+            </if>
+            <output expression="&quot;Vlera eshte: &quot; &amp;vlera" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

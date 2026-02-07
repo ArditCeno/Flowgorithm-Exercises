@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ushtrim me seri"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-30 09:26:36 AM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNS0wMS0zMDswOToxNjo1MSBBTTsyNzc5"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNS0wMS0zMDswOToyNjozNiBBTTsxOzI4OTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="seria s=1+x+x^2/2...."/>
+            <declare name="x, n, term, sum" type="Real" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Vendos vleren e x: &quot;" newline="True"/>
+            <input variable="x"/>
+            <output expression="&quot;Fusni vleren e n: &quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="sum" expression="1"/>
+            <assign variable="term" expression="1"/>
+            <assign variable="i" expression="1"/>
+            <for variable="i" start="1" end="n-1" direction="inc" step="1">
+                <assign variable="term" expression="term*(x/i)"/>
+                <assign variable="sum" expression="sum + term"/>
+            </for>
+            <output expression="&quot;Shuma eshte : &quot; &amp;sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

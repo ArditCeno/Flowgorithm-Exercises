@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="USHTRIM 1 VLERA E NR"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-30 11:57:21 AM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNS0wMS0zMDsxMTo0Nzo1NiBBTTsyNzgx"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNS0wMS0zMDsxMTo1NzoyMSBBTTsxOzI4ODI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, j" type="Integer" array="False" size=""/>
+            <declare name="perseritur" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Vendosini vleren (n): &quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot;Vendosni vleren e nr:&quot;" newline="True"/>
+            <declare name="nr" type="Integer" array="True" size="n"/>
+            <input variable="nr"/>
+            <for variable="i" start="0" end="n-2" direction="inc" step="1">
+                <for variable="j" start="0" end="n-1" direction="inc" step="1"/>
+                <if expression="nr[i]==nr[j]">
+                    <then>
+                        <assign variable="perseritur" expression="true"/>
+                        <output expression="&quot;Numri i perseritur: &quot; &amp;nr[i]" newline="True"/>
+                    </then>
+                    <else>
+                        <assign variable="perseritur" expression="false"/>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ardit"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-02-07 11:47:45 PM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNC0xMS0yNzswMjo1NzoxNSBQTTsyNzk4"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNi0wMi0wNzsxMTo0Nzo0NSBQTTsyOzI5MDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N1, N2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Vendos numrin e pare&quot;" newline="True"/>
+            <input variable="N1"/>
+            <output expression="&quot;Vendos numrin e dyte&quot;" newline="True"/>
+            <input variable="N2"/>
+            <if expression="N1%2==0">
+                <then>
+                    <output expression="&quot;Nr1 eshte cift&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Nr1 eshte tek&quot;" newline="True"/>
+                </else>
+            </if>
+            <if expression="N2%2==0">
+                <then>
+                    <output expression="&quot;Nr2 eshte cift&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Nr2 eshte tek&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

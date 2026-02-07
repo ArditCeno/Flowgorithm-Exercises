@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ushtrim qe se di si e kam bere"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-12-15 05:08:56 PM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNC0xMi0xNTswNTowMjoyOCBQTTsyNzkz"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTRHUE5PSVQ7MjAyNC0xMi0xNTswNTowODo1NiBQTTsxOzI5MDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="S, term, n, i" type="Integer" array="False" size=""/>
+            <assign variable="S" expression="0"/>
+            <assign variable="term" expression="1"/>
+            <comment text="Mund t&#235; vendosni nj&#235; num&#235;r m&#235; t&#235; madh p&#235;r t&#235; marr&#235; m&#235; shum&#235; terma&#10; per n"/>
+            <assign variable="n" expression="6"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <if expression="i%2=1">
+                    <then>
+                        <assign variable="S" expression="S+term"/>
+                    </then>
+                    <else>
+                        <assign variable="S" expression="S-term"/>
+                    </else>
+                </if>
+                <assign variable="term" expression="term*(-2)"/>
+            </for>
+            <output expression="&quot;Vlera S: &quot;&amp;S" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
