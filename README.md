@@ -3,8 +3,6 @@
 This repository contains a collection of beginner-friendly Flowgorithm exercises created to practice programming logic and basic algorithm design.
 The goal of this project is to help students understand fundamental programming concepts before moving to languages like C++ or Java.
 
----
-
 ## 📂 Contents
 The exercises include:
 - Number value evaluation  
@@ -23,8 +21,6 @@ The exercises include:
 - Input / Output operations  
 - Arithmetic processes  
 
----
-
 ## ✅ Concepts Practiced
 
 These exercises focus on:
@@ -34,8 +30,6 @@ These exercises focus on:
 - Loops and series  
 - Logical problem solving  
 - Real-life algorithm examples  
-
----
 
 ## 👤 Author
 Created by **Ardit Ceno**
